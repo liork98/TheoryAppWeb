@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AppInstallPage from './AppInstallPage';
 import TermsOfUsePage from './TermsOfUsePage';
+import { FocusManager, MessagesAnnouncer } from '@feedzai/react-a11y-tools';
 
 function App() {
     return (
@@ -11,6 +12,7 @@ function App() {
                 <Route path="/privacy-policy" element={<TermsOfUsePage />} />
             </Routes>
         </Router>
+
     );
 }
 
